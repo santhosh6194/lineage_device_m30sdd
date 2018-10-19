@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Display Cutout
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
