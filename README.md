@@ -1,1 +1,1 @@
-# lineage_device_m30sdd
+# Samsung Galaxy M30s Device Tree for LineageOS
