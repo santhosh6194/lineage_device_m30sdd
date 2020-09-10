@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsun/m30sdd
+DEVICE_PATH := device/samsung/m30sdd
 
