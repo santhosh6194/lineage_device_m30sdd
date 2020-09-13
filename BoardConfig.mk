@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/samsung/m30sdd
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := m30sdd
+
 # Board
 TARGET_BOARD_PLATFORM := universal9611
 TARGET_SOC := exynos9611
