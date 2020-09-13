@@ -14,4 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/m30sdd
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
