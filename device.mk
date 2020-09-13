@@ -54,6 +54,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.usb.rc \
+    init.recovery.exynos9611.rc
+
 # SamsungDoze
 PRODUCT_PACKAGES += \
     SamsungDoze
