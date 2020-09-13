@@ -125,3 +125,6 @@ BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery.fstab
+
+# Inherit from vendor
+-include vendor/samsung/m30sdd/BoardConfigVendor.mk

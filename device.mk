@@ -81,3 +81,6 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
+
+# Inherit from vendor
+$(call inherit-product, vendor/samsung/m30sdd/m30sdd-vendor.mk)
