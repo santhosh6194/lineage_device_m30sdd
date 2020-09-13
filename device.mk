@@ -82,5 +82,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
 
+# Property overrides
+-include $(LOCAL_PATH)/product_prop.mk
+
 # Inherit from vendor
 $(call inherit-product, vendor/samsung/m30sdd/m30sdd-vendor.mk)
