@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # SamsungDoze
 PRODUCT_PACKAGES += \
     SamsungDoze
