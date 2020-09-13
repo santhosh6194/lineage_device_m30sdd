@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # SP-NDK
 PRODUCT_PACKAGES += \
     libvulkan
