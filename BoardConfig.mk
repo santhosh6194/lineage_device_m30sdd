@@ -42,6 +42,13 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# SystemRoot
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+AB_OTA_UPDATER := false
+
+BOARD_ROOT_EXTRA_FOLDERS := \
+    efs
+
 # Kernel
 TARGET_KERNEL_SOURCE = kernel/samsung/m30sdd/
 TARGET_KERNEL_CONFIG = m30sdd_defconfig
