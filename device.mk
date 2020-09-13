@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio_keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio_keys.kl
 
+# LPM
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # SP-NDK
 PRODUCT_PACKAGES += \
     libvulkan
