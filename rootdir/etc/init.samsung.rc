@@ -1,0 +1,53 @@
+on init
+    # Disable vendor overlay
+    mount none /vendor/lost+found /vendor/overlay bind
+
+    # Set SunlightEnhancement sysnode owner
+    chown system system /sys/class/mdnie/mdnie/lux
+
+    # Vibrator
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/intensity
+    chown system system /sys/class/timed_output/vibrator/force_touch_intensity
+    write /sys/class/timed_output/vibrator/force_touch_intensity 10000
+
+# LPM
+service lpm /system/bin/lpm
+    class sec-charger
+    user root
+    group system radio input
+    critical
+
+on late-fs
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/read_ahead_kb 2048
+    write /sys/block/sda/queue/nr_requests 256
+
+on property:sys.boot_completed=1
+    write /sys/block/sda/queue/iostats 1
+    write /sys/block/sda/queue/read_ahead_kb 256
+    write /sys/block/sda/queue/nr_requests 128
+
+service argos-daemon /system/bin/true
+    oneshot
+    disabled
+
+service ExynosHWCServiceTW /system/bin/true
+    oneshot
+    disabled
+
+service proca /system/bin/true
+    oneshot
+    disabled
+
+service secure_storage /system/bin/true
+    oneshot
+    disabled
+
+service vaultkeeper /system/bin/true
+    oneshot
+    disabled
+
+service sec_wsm_service /system/bin/true
+    oneshot
+    disabled
