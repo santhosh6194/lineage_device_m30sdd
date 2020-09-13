@@ -57,3 +57,7 @@ PRODUCT_PACKAGES += \
 # SP-NDK
 PRODUCT_PACKAGES += \
     libvulkan
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
