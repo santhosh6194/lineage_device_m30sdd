@@ -19,3 +19,10 @@ DEVICE_PATH := device/samsung/m30sdd
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
+
+# Device DPI
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := 420dpi
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
+
+
