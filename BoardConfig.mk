@@ -19,6 +19,10 @@ DEVICE_PATH := device/samsung/m30sdd
 # Assert
 TARGET_OTA_ASSERT_DEVICE := m30sdd
 
+# Audio
+TARGET_EXCLUDES_AUDIOFX := true
+USE_XML_AUDIO_POLICY_CONF := 1
+
 # Board
 TARGET_BOARD_PLATFORM := universal9611
 TARGET_SOC := exynos9611
