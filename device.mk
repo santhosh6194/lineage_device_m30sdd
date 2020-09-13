@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # SP-NDK
 PRODUCT_PACKAGES += \
     libvulkan
