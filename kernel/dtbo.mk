@@ -5,7 +5,7 @@ MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTBO_DIR   := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts/samsung
 
-DTBO_CFG := $(PLATFORM_PATH)/kernel/$(TARGET_DEVICE).cfg
+DTBO_CFG := $(DEVICE_PATH)/kernel/$(TARGET_DEVICE).cfg
 
 define build-dtboimage-target
     $(call pretty,"Target dtbo image: $(BOARD_PREBUILT_DTBOIMAGE)")
