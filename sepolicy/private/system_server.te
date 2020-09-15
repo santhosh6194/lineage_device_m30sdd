@@ -1,0 +1,1 @@
+allow system_server sysfs_rtc:file rw_file_perms;
