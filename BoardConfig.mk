@@ -111,6 +111,9 @@ OVERRIDE_RS_DRIVER := libRSDriverArm.so
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
+# Selinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
