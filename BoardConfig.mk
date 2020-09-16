@@ -57,7 +57,11 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 AB_OTA_UPDATER := false
 
 BOARD_ROOT_EXTRA_FOLDERS := \
-    efs
+    efs \
+    metadata \
+    carrier \
+    dqmdbg \
+    spu
 
 # Kernel
 TARGET_KERNEL_SOURCE = kernel/samsung/m30sdd/

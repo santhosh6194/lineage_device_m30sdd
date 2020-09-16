@@ -3,3 +3,11 @@ type sysfs_lcd_writable, sysfs_type, fs_type;
 type sysfs_health, sysfs_type, fs_type;
 type sysfs_sec_key, sysfs_type, fs_type;
 
+type carrier_file, fs_type;
+allow carrier_file labeledfs:filesystem associate;
+
+type dqmdbgblk_file, fs_type;
+allow dqmdbgblk_file labeledfs:filesystem associate;
+
+type spu_file, fs_type;
+allow spu_file labeledfs:filesystem associate;
