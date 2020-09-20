@@ -50,6 +50,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
+# FM radio
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # Init
 PRODUCT_PACKAGES += \
     init.samsung.rc

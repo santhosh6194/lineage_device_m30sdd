@@ -6,5 +6,9 @@
     {
         "repository": "android_kernel_samsung_m30sdd",
         "target_path": "kernel/samsung/m30sdd"
+    },
+    {
+        "repository": "android_hardware_samsung_slsi_fm",
+        "target_path": "hardware/samsung_slsi/fm"
     }
 ]
