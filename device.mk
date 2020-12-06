@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.samsung.rc
+    init.samsung.rc \
+    fstab.enableswap
 
 # Keylayout
 PRODUCT_COPY_FILES += \
