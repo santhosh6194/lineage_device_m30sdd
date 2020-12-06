@@ -34,6 +34,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-g72
 
 # build/make/core/Makefile
 TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
 
 # Enable hardware/samsung
 BOARD_VENDOR := samsung
