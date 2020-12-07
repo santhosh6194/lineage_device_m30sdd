@@ -4,14 +4,16 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 
-#/dev/block/platform/13500000.dwmmc0/by-name/system     /system 		ext4      ro,errors=panic,block_validity                                                    											wait
+/dev/block/platform/13520000.ufs/by-name/system		/system				ext4		ro																																		wait
 /dev/block/platform/13520000.ufs/by-name/cache		/cache					ext4		noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered						wait,check
 /dev/block/platform/13520000.ufs/by-name/userdata		/data						f2fs		noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678	wait,check,forceencrypt=footer,quota,reservedsize=128M,length=-20480
+/dev/block/platform/13520000.ufs/by-name/boot			/boot						emmc	defaults						defaults
+/dev/block/platform/13520000.ufs/by-name/recovery		/recovery				emmc	defaults						defaults
 /dev/block/platform/13520000.ufs/by-name/efs				/mnt/vendor/efs		ext4		noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered						wait,check
 /dev/block/platform/13520000.ufs/by-name/cpefs			/mnt/vendor/cpefs	ext4		noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered						wait,check,nofail
 /dev/block/platform/13520000.ufs/by-name/misc			/misc					emmc	defaults						defaults
 
 # VOLD :: fstab.a50
-#/dev/block/platform/13500000.dwmmc0/by-name/hidden         /preload     ext4      defaults    		    		voldmanaged=preload:auto
+/dev/block/platform/13520000.ufs/by-name/hidden			/preload			ext4		defaults						voldmanaged=preload:auto
 /devices/platform/13550000.dwmmc2/mmc_host/*			auto					vfat		defaults						voldmanaged=sdcard:auto
 /devices/platform/13200000.usb/13200000.dwc3/xhci-hcd.2.auto/usb*	auto	auto	defaults						voldmanaged=usb:auto
