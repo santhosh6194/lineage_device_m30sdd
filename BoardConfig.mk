@@ -17,7 +17,7 @@
 DEVICE_PATH := device/samsung/m30sdd
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := m30sdd
+TARGET_OTA_ASSERT_DEVICE := m30sdd,m30s
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
