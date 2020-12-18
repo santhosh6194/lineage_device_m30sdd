@@ -20,20 +20,9 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.latch_unsignaled=1
 
-#Enable csc for vendor image
+# Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.cscsupported=1
-
-#Status of softsim
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.softsim.status=default,default \
-    persist.sys.softsim.netmode=4g \
-    persist.sys.softsim.type=default
-
-#Cmc properties
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.cmc.device_type=pd \
-    ro.cmc.version=2.0
+    ro.telephony.default_network=10,10
 
 # Tones
 PRODUCT_PRODUCT_PROPERTIES += \
