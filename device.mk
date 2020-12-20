@@ -80,6 +80,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_PACKAGES += \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.usb.rc \

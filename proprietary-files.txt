@@ -25,5 +25,9 @@ media/slow_charging_usb.spi
 media/temperature_limit_usb.spi
 media/water_protection_usb.spi
 
+# NFC
+etc/nfc_key
+etc/nfcee_access.xml
+
 # Zswap
 -sbin/sswap;rootfs
