@@ -12,3 +12,6 @@
 /carrier(/.*)?    u:object_r:carrier_file:s0
 /dqmdbg(/.*)?    u:object_r:dqmdbgblk_file:s0
 /spu(/.*)?    u:object_r:spu_file:s0
+
+# Vendor
+/vendor/lib(64)?/hw	u:object_r:vendor_hal_file:s0
