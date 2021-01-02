@@ -107,5 +107,8 @@ PRODUCT_PACKAGES += \
 # Property overrides
 -include $(LOCAL_PATH)/product_prop.mk
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
 # Inherit from vendor
 $(call inherit-product, vendor/samsung/m30sdd/m30sdd-vendor.mk)
