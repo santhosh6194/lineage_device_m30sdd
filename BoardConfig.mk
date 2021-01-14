@@ -118,6 +118,9 @@ BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
+# PRODUCT
+TARGET_COPY_OUT_PRODUCT := system/product
+
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
